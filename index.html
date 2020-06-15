@@ -2,6 +2,7 @@
 <head>
 <title>SOA CET</title>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style>
@@ -15,12 +16,74 @@
 	.black {width:100%;height:100%;background: rgba(0,0,0,0.5);}
 	.explain {width:100%;background:black;color:white;padding:40px;}
 	.navbar {background:white;padding:20px;padding-top:10px;text-align: right;position:fixed;width:100%;z-index:2;}
+
+.typewriter {height:300px;}
+	.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .0em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+.typ h1 {overflow: hidden; /* Ensures the content is not revealed until the animation */
+   /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+
+
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.fade-in {
+animation: fadeIn ease 5s;
+-webkit-animation: fadeIn ease 5s;
+-moz-animation: fadeIn ease 20s;
+-o-animation: fadeIn ease 20s;
+-ms-animation: fadeIn ease 20s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
 </style>	
 
 <body>
 	<div id=bg class=jumbotron style="padding: 0px;margin:0px;">
 		<div class=black>
-			<nav class=navbar>
+			<nav class="navbar">
 				<font color=gray>
 					<a href=index.html>HOME</a> &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;
 					<a href=artist.html>ARTISTS</a> &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;
@@ -28,15 +91,16 @@
 
 				</font>
 			</nav>
-			<h1 class="animated fadein">STATE OF ART</h1>
+			<div class="typewriter">
+			<h1 class="animated fadein">STATE OF ART</h1></div>
 			<a id=about></a>
 		</div>
 	</div>	
-	<div class=jumbotron style="margin:0px;">
-		<h1>About Us</h1>
+	<div class=jumbotron data-aos=fade-up style="margin:0px;">
+		<h1 class=fade-in>About Us</h1>
 		<div class=row>
 			<div class="col-md-8">
-				<p>ARTIFEX is an initiative taken by the College Union in the effort to foster a college driven by creativity that
+				<p>State of Art is an initiative taken by the College Union in the effort to foster a college driven by creativity that
 				provides the opportunity for everyone to engage in diverse arts and culture. We believe that great
 				artisanship inspires us, brings us together and teaches about ourselves and the world around us.</p><br><p>
 				The primary vision of the gallery is to procure, propose & promote an exclusive range of Contemporary Art,
@@ -50,7 +114,7 @@
 			</div>
 		</div>	
 	</div>
-	<div class=jumbotron style="background:white;">
+	<div class="jumbotron aos-animate" data-aos=fade-up style="background:white;">
 		<div class=row>
 			<div class=col-md-3>
 				<img width=100% src=paint2.png>
@@ -58,7 +122,7 @@
 			<div class=col-md-9>
 	<h3>Elevating our artists to new heights of glory</h3>
 <p>Our artistic community associate themselves with a circle of creativity. With numerous artists and
-artworks on display, ARTIFEX has the companionship of multitudinous artworks by various artists.</p><p>
+artworks on display, State of Art has the companionship of multitudinous artworks by various artists.</p><p>
 We aim to provide a useful platform where the artists can publish and sell their artworks. As new waves
 of exciting young artists add new contours onto art, our team is on hand to support these sprouting
 talents in every step of the way </p>
@@ -71,18 +135,18 @@ talents in every step of the way </p>
 	</div>
 
 
-	<div class=jumbotron style="">
+	<div class=jumbotron style="" data-aos=fade-up >
 		<div class=row>
 			
 			<div class=col-md-9>
 	<h3>Peruse and Purchase Art online</h3><p>
-ARTIFEX expose a wide array of Contemporary & Modern Art & Paintings Online. Every piece of artwork
+State of Art expose a wide array of Contemporary & Modern Art & Paintings Online. Every piece of artwork
 displayed on the website is chosen by our crew to be put on site along with the artiste’s profile. These
 diverse pieces of artwork are sure to stick out and catch the eyes of the insightful art collector or even a
 first-time art buyer.
 The paintings are of different mediums like – Oil Paintings, Acrylic Paintings, Watercolour Paintings,
 Graphite and Charcoal sketches.
-ARTIFEX showcases artworks on various style & subjects like – Abstract Paintings, Landscape Paintings,
+State of Art showcases artworks on various style & subjects like – Abstract Paintings, Landscape Paintings,
 Portrait Paintings, Caricature works, Mandala art forms etc.
 </p>
 
@@ -94,14 +158,14 @@ Portrait Paintings, Caricature works, Mandala art forms etc.
 	</div>	
 
 
-		<div class=jumbotron style="background:white;">
+		<div class=jumbotron data-aos=fade-up style="background:white;">
 		<div class=row>
 			<div class=col-md-3>
 				<img width=100% src=paint1.png>
 			</div>
 			<div class=col-md-9>
 	<h3>How to purchase your art?</h3>
-ARTIFEX has been made a very user-friendly site where the buyer can have a detailed resume of a specific
+State of Art has been made a very user-friendly site where the buyer can have a detailed resume of a specific
 Artist and choose your artwork which you find appealing. If you’re interested in a for-sale work, simply
 visit the artwork page and click on the Purchase Art Online option. You can further enquire about pricing,
 availability, shipping, and further details. </p>
@@ -139,7 +203,7 @@ availability, shipping, and further details. </p>
 </div>
 -->
 
-<div class=jumbotron style="margin-bottom:0px;"><a id=contact></a>
+<div class=jumbotron data-aos=fade-up style="margin-bottom:0px;"><a id=contact></a>
 <div class=row>
 	<div class=col-md-4>	
 	<h5>Contact Us</h5>
@@ -163,4 +227,8 @@ availability, shipping, and further details. </p>
 <div class=jumbotron style="background: white;margin-bottom:0px;padding:10px;">
 	<center>&copy; Copyright 2020 . SOA CET . All rights reserved</center>
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>   
+   AOS.init(); 
+</script>
 </body></html>
