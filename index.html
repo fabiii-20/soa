@@ -77,6 +77,17 @@ animation: fadeIn ease 5s;
 0% {opacity:0;}
 100% {opacity:1;}
 }
+
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+
 .container {
 	display:inline-block;
 	text-align: center;
@@ -99,7 +110,11 @@ animation: fadeIn ease 5s;
 				</font>
 			</nav>
 			<div class="container">
-			<h1>STATE OF ART</h1><br></div>
+			<div id=content-desktop>
+			<h1>STATE OF ART</h1></div>
+			<div id=content-mobile>
+				<h3>STATE OF ART</h3>
+			</div><br></div>
 			<a id=about></a>
 		</div>
 	</div>	
