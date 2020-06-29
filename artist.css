@@ -1,5 +1,6 @@
 @media(max-width:400px){
     .phone{
        padding-top: 100% !important;
+       margin-top: 40%;
     }
 }
