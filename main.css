@@ -1,0 +1,19 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 0px;
+    margin: 50px;
+
+    
+    
+}
+.boxes{
+    padding: 20px;
+    background-color: rgb(211, 206, 206);
+    text-align: center;
+    border-radius: 5px;
+   
+    
+    
+}
