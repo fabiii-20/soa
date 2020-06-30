@@ -4,3 +4,11 @@
 
     }
 }
+
+img{
+    border-radius: 30px;
+    width :100%;
+}
+img:hover{
+    border-radius: 30px;
+}
